@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+locale: "it"
+
+collections:
+  - name: "media"
+    label: "Foto & Video"
+    description: "Aggiungi, ordina o rimuovi le foto e i video che compaiono sul sito"
+    files:
+      - name: "galleria"
+        label: "Galleria del sito"
+        file: "content/media.json"
+        fields:
+          - name: "foto"
+            label: "Foto"
+            widget: "list"
+            summary: "Foto della galleria"
+            fields:
+              - name: "immagine"
+                label: "Immagine"
+                widget: "image"
+              - name: "didascalia"
+                label: "Didascalia (facoltativa)"
+                widget: "string"
+                required: false
+          - name: "video"
+            label: "Video"
+            widget: "list"
+            summary: "Video del sito"
+            fields:
+              - name: "url"
+                label: "Link embed YouTube o Vimeo"
+                widget: "string"
+              - name: "titolo"
+                label: "Titolo"
+                widget: "string"
+  - name: "impostazioni"
+    label: "Impostazioni del sito"
+    description: "Sezione riservata all'amministratore"
+    files:
+      - name: "stato"
+        label: "Stato del sito"
+        file: "content/settings.json"
+        fields:
+          - name: "manutenzione"
+            label: "Modalità manutenzione (i visitatori vedono la pagina di pausa)"
+            widget: "boolean"
+            default: false
