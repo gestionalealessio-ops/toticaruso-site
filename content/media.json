@@ -1,17 +1,53 @@
 {
   "foto": [
-    {"immagine": "https://picsum.photos/seed/concert-crowd-lights/720/540", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/wedding-first-dance/720/900", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/dj-booth-club/720/540", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/rooftop-party-sunset/720/860", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/piano-bar-elegant/720/540", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/festival-stage-night/720/900", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/backstage-microphone/720/540", "didascalia": ""},
-    {"immagine": "https://picsum.photos/seed/dancefloor-confetti/720/860", "didascalia": ""}
+    {
+      "immagine": "https://picsum.photos/seed/concert-crowd-lights/720/540",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/wedding-first-dance/720/900",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/dj-booth-club/720/540",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/rooftop-party-sunset/720/860",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/piano-bar-elegant/720/540",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/festival-stage-night/720/900",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/backstage-microphone/720/540",
+      "didascalia": ""
+    },
+    {
+      "immagine": "https://picsum.photos/seed/dancefloor-confetti/720/860",
+      "didascalia": ""
+    },
+    {
+      "immagine": "/img/uploads/screenshot-2026-05-17-163647.png"
+    }
   ],
   "video": [
-    {"url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ", "titolo": "LIVE — Ortigia, Siracusa"},
-    {"url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ", "titolo": "WEDDING SET — Val di Noto"},
-    {"url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ", "titolo": "DJ SET — Club Aurora, Catania"}
+    {
+      "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+      "titolo": "LIVE — Ortigia, Siracusa"
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+      "titolo": "WEDDING SET — Val di Noto"
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+      "titolo": "DJ SET — Club Aurora, Catania"
+    }
   ]
 }
