@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pannello di controllo — Toti Caruso</title>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<script src="https://unpkg.com/decap-cms@^3.8.5/dist/decap-cms.js"></script>
+<script>
+  // Sicurezza: chi entra senza ruolo admin viene mandato al pannello cliente
+  function controllaRuolo(user){
+    var ruoli = (user && user.app_metadata && user.app_metadata.roles) ? user.app_metadata.roles : [];
+    if (ruoli.indexOf('admin') === -1) { location.replace('/cliente/'); }
+  }
+  if (window.netlifyIdentity) {
+    netlifyIdentity.init();
+    netlifyIdentity.on('init', function(user){ if (user) controllaRuolo(user); });
+    netlifyIdentity.on('login', controllaRuolo);
+  }
+</script>
+</body>
+</html>
